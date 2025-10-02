@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-title {
+font-size: 2.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.hero-title span {
+color: #ffca28; /* resalta "SkyAdventure" en amarillo cálido */
+}
+
+.hero-subtitle {
+font-size: 1.3rem;
+opacity: 0.9;
+}
+.navbar-custom {
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); /* degradado oscuro elegante */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f8f9fa !important;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #f8f9fa !important;
+    margin-left: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffca28 !important; /* amarillo cálido */
+    transform: translateY(-2px);
+}
+
+/* Para que el contenido no quede tapado */
+body::before {
+    content: "";
+    display: block;
+    height: 70px;
+}
+
+    .navbar-custom {
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f8f9fa !important;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #f8f9fa !important;
+    margin-left: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffca28 !important;
+    transform: translateY(-2px);
+}
+
+body::before {
+    content: "";
+    display: block;
+    height: 70px;
+}
+
+/* Carousel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+.btn-reservar {
+    background-color: #ffca28;
+    color: #000;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-reservar:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
+.carousel-item img {
+height: 600px;       /* ajusta a la altura deseada */
+object-fit: cover;   /* recorta y centra la imagen */
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Adventure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SkyAdventure</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <div class="container mt-5 text-center hero-box">
+  <h1 class="hero-title">Bienvenido a <span>SkyAdventure</span></h1>
+  <p class="hero-subtitle">Explora nuestros tours y vive la experiencia</p>
+</div>
+  <div id="tourCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/assets/img/montaña.jpg" class="d-block w-100" alt="Tour 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Aventura en la Montaña</h1>
+          <p>Descubre paisajes únicos y vive la experiencia</p>
+          <button class="btn btn-reservar" data-bs-toggle="modal" data-bs-target="#reservarModal">Reservar</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/playa.jpg" class="d-block w-100" alt="Tour 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Explora el Mar</h1>
+          <p>Snorkel, buceo y más aventuras acuáticas</p>
+          <button class="btn btn-reservar" data-bs-toggle="modal" data-bs-target="#reservarModal">Reservar</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/bosque.jpg" class="d-block w-100" alt="Tour 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Experiencia en el Bosque</h1>
+          <p>Conecta con la naturaleza en su máximo esplendor</p>
+          <button class="btn btn-reservar" data-bs-toggle="modal" data-bs-target="#reservarModal">Reservar</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+   <div class="modal fade" id="reservarModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Reserva tu Tour</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="fecha" class="form-label">Fecha del Tour</label>
+              <input type="date" class="form-control" id="fecha" required>
+            </div>
+            <button type="submit" class="btn btn-reservar w-100">Confirmar Reserva</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
