@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky Adventure</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
@@ -132,7 +133,178 @@
             </div>
         </div>
     </section>
+       <section class="faq-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Qué debo llevar para los tours de montaña?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Para nuestros tours de montaña, recomendamos llevar ropa cómoda y en capas, calzado de trekking, protección solar, gafas de sol, una mochila pequeña con agua y snacks, y por supuesto, tu cámara para capturar los paisajes espectaculares. Te proporcionaremos el equipo de seguridad necesario.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Qué nivel de condición física necesito para los tours?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ofrecemos tours para diferentes niveles de condición física. Tenemos opciones para principiantes que requieren una condición física básica, así como rutas más desafiantes para excursionistas experimentados. En la descripción de cada tour especificamos el nivel de dificultad. Si tienes dudas, contáctanos para asesorarte sobre la mejor opción según tu condición.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Qué políticas de cancelación tienen?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Aceptamos cancelaciones hasta 48 horas antes del tour con reembolso completo. Entre 48 y 24 horas antes, ofrecemos un reembolso del 50%. Las cancelaciones con menos de 24 horas de anticipación no son reembolsables. En caso de condiciones climáticas adversas que impidan la realización del tour, ofrecemos reprogramación o reembolso completo.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    ¿Los tours incluyen seguro?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, todos nuestros tours incluyen seguro de responsabilidad civil y seguro de accidentes personales. Sin embargo, recomendamos que los viajeros internacionales tengan su propio seguro de viaje que cubra cualquier eventualidad médica o de cancelación de viaje.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="contact-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="contact-form">
+                                <form class="needs-validation" novalidate id="contactForm">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Nombre completo</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Mensaje</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-contact">Enviar mensaje</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-5">
+                            <div class="contact-info">
+                                <h3>Información de contacto</h3>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Dirección</h5>
+                                        <p>Av. Aventura 123<br>Montaña Alta, CP 45678</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Teléfono</h5>
+                                        <p>+1 (555) 123-4567</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Email</h5>
+                                        <p>info@skyadventure.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Horario de atención</h5>
+                                        <p>Lun - Vie: 9:00 - 18:00<br>Sáb: 9:00 - 14:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    Sky<span>Adventure</span>
+                </div>
+                
+                <p class="footer-description">
+                    Descubre paisajes únicos y vive experiencias inolvidables con nuestros tours de aventura. 
+                    Conéctate con nosotros en redes sociales.
+                </p>
+                
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" class="social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com" class="social-link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkyAdventure. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
